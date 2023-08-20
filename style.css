@@ -386,7 +386,7 @@ video {
   padding: 8px;
   border-radius: 16px;
   width: 80px;
-  border: 1px solid rgb(126, 126, 247);
+  border: 1px solid rgb(158, 247, 126);
   cursor: pointer;
   margin-left: 70px;
   transition: transform 0.3s ease;
@@ -394,8 +394,8 @@ video {
 #switchYes:hover {
   background-image: linear-gradient(
     to bottom right,
-    rgb(251, 50, 50),
-    rgb(161, 161, 237)
+    rgb(50, 251, 73),
+    rgb(232, 237, 161)
   );
   background-color: white;
   border: 1px solid white;
@@ -406,17 +406,20 @@ video {
 #yesRestart {
   padding: 8px;
   border-radius: 16px;
-  width: 80px;
-  border: 1px solid rgb(126, 126, 247);
+  width: 30%;
   cursor: pointer;
   transition: transform 0.3s ease;
+  font-weight: 800;
+  color: #fff;
+  background-color: green;
+  border: none;
 }
 
 #yesRestart:hover {
   background-image: linear-gradient(
     to bottom right,
-    rgb(251, 50, 50),
-    rgb(161, 161, 237)
+    rgb(108, 209, 90),
+    rgb(207, 249, 107)
   );
   background-color: white;
   border: 1px solid white;
@@ -435,8 +438,8 @@ video {
 #switchNo:hover {
   background-image: linear-gradient(
     to bottom right,
-    rgb(251, 50, 50),
-    rgb(161, 161, 237)
+    rgb(211, 251, 50),
+    rgb(161, 237, 166)
   );
   background-color: white;
   border: 1px solid white;
@@ -550,6 +553,8 @@ video {
     text-align: center;
     margin-top: 48px;
     z-index: 999;
+    width: 185%;
+    margin-left: -58px;
   }
   .title {
     position: absolute;
@@ -560,7 +565,7 @@ video {
     padding: 10px;
     font-size: 14px;
     text-align: center;
-    z-index: 99999999999999999;
+    z-index: 999;
   }
   .question {
     display: none;
@@ -641,15 +646,19 @@ video {
     object-fit: contain;
     height: 60px;
   }
+
   #yesRestart {
     padding: 8px;
     border-radius: 16px;
-    width: 80px;
-    border: 1px solid rgb(126, 126, 247);
+    width: 80%;
+    border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin-left: 69px;
+    margin-left: 22px;
     margin-top: 10px;
+    font-weight: 800;
+    color: #fff;
+    background-color: green;
   }
 }
 
@@ -683,7 +692,7 @@ video {
     padding: 10px;
     font-size: 14px;
     text-align: center;
-    z-index: 99999999999999999;
+    z-index: 999;
   }
   .question {
     display: none;
@@ -767,12 +776,14 @@ video {
   #yesRestart {
     padding: 8px;
     border-radius: 16px;
-    width: 80px;
-    border: 1px solid rgb(126, 126, 247);
+    width: 40%;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin-left: 69px;
+    margin-left: 22px;
     margin-top: 10px;
+    font-weight: 800;
+    color: #fff;
+    background-color: green;
   }
   .home {
     overflow: hidden;
@@ -782,9 +793,12 @@ video {
 /* Extra small devices (phones) */
 @media (min-width: 425px) and (max-width: 576px) {
   .baggy h1 {
+    position: absolute;
     text-align: center;
+    margin-top: 48px;
     z-index: 999;
-    margin-top: 25px;
+    width: 185%;
+    left: -44%;
   }
   #bagsContainer {
     flex-wrap: wrap;
@@ -810,7 +824,7 @@ video {
     padding: 10px;
     font-size: 14px;
     text-align: center;
-    z-index: 99999999999999999;
+    z-index: 999;
   }
   .question {
     display: none;
@@ -894,17 +908,49 @@ video {
   #yesRestart {
     padding: 8px;
     border-radius: 16px;
-    width: 80px;
-    border: 1px solid rgb(126, 126, 247);
+    width: 80%;
     cursor: pointer;
     transition: transform 0.3s ease;
-    margin-left: 69px;
+    margin-left: 22px;
     margin-top: 10px;
+    font-weight: 800;
+    color: #fff;
+    background-color: green;
+    border: none;
   }
 }
 
 /* Small devices (tablets) */
 @media (min-width: 577px) and (max-width: 768px) {
+  .title {
+    top: 57px;
+    left: 34px;
+    z-index: 99;
+  }
+  .selected-title {
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    top: 105px;
+    left: 0px;
+    z-index: 999;
+  }
+  .selected-bag {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    top: 105px;
+    left: 0px;
+    font-weight: bold;
+    z-index: 999;
+  }
   #bagsContainer {
     flex-wrap: wrap;
     width: 523px;
@@ -924,16 +970,22 @@ video {
     width: 123px;
     transition: transform 0.3s ease;
   }
-  .title {
-    top: 55px;
-    left: 24px;
-    z-index: 99;
+  #yesRestart {
+    padding: 8px;
+    border-radius: 16px;
+    width: 80%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: 800;
+    color: #fff;
+    background-color: green;
+    border: none;
   }
   .question {
     display: none;
     position: absolute;
-    bottom: 25%;
-    left: 30%;
+    bottom: 26%;
+    left: 25%;
     display: flex;
     justify-content: center;
     z-index: 90;
@@ -952,16 +1004,6 @@ video {
     justify-content: center;
     border-radius: 20px;
     z-index: 999;
-  }
-
-  .question {
-    display: none;
-    position: absolute;
-    bottom: 26%;
-    left: 38%;
-    display: flex;
-    justify-content: center;
-    z-index: 90;
   }
 
   .modal-content {
