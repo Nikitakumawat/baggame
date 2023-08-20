@@ -1062,6 +1062,9 @@ video {
     object-fit: contain;
     height: 60px;
   }
+  .home {
+    overflow: hidden;
+  }
 }
 
 /* Extra large devices (large desktops, TVs) */
@@ -1132,6 +1135,9 @@ video {
     height: 198px;
     font-size: 30px;
     z-index: 999;
+  }
+  .home {
+    overflow: hidden;
   }
 }
 
