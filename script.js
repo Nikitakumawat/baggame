@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mainScreen.style.display = "block";
       }
       showBagsContainer();
+      startPlayer.play();
     }
   });
 });
@@ -121,6 +122,7 @@ document.getElementById("Bag 16").addEventListener("click", selectBag);
 
 const musicPlayer = document.getElementById("winningMusic");
 const selectionPlayer = document.getElementById("selectionMusic");
+const startPlayer = document.getElementById("startMusic");
 
 const modal = document.getElementById("modal");
 document
