@@ -1192,7 +1192,7 @@ video {
   .question {
     display: none;
     position: absolute;
-    bottom: 28%;
+    bottom: 15%;
     left: 40%;
     display: flex;
     justify-content: center;
@@ -1256,7 +1256,7 @@ video {
   .question {
     display: none;
     position: absolute;
-    bottom: 8%;
+    bottom: 2%;
     left: 40%;
     display: flex;
     justify-content: center;
