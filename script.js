@@ -43,6 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const logoutButton = document.getElementById("logout-button");
   const gamerNameInput = document.getElementById("gamer-name");
   const displayName = document.getElementById("user-name");
+  const restartButton = document.getElementById("restart");
+
+  restartButton.addEventListener("click", () => restartGame());
 
   // Handle logout button click
   logoutButton.addEventListener("click", function () {
