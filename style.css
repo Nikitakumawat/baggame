@@ -80,6 +80,28 @@ video {
   background-color: transparent;
   z-index: 999;
 }
+#restart{
+  background-color: #efa300;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 5px;
+  z-index: 999;
+}
+#restart:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(251, 164, 50),
+    rgb(237, 185, 53)
+  );
+  background-color: white;
+  border: 1px solid white;
+  color: white;
+  transform: scale(1.1);
+}
 
 #restart-button {
   background-color: #d9ba09;
